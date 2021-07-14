@@ -76,8 +76,9 @@ body{
 /* players style  */
 .middle-section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .players-section{
@@ -104,6 +105,43 @@ body{
 .player:hover{
     box-shadow: 0px -1px 14px 7px pink;
 }
+/* external part  */
+.score-section{
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    max-width: 1050px;
+    margin: 70px auto 0;
+}
+.live-score{
+    text-align: center;
+    color:#2D25A0;
+    font-size: 30px;
+    
+}
+.goul-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.live-match{
+    padding-right: 25px;
+    color:#2D25A0;
+    text-align: center;
+    margin-top: 10px;
+}
+.live-match iframe{
+    width: 100%;
+    max-width: 556px;
+    
+}
+
+
+
+
+
+
 
 /* ========
 foooter style 
@@ -198,7 +236,10 @@ responsive for mobile
     .banner-img{
         padding-top:0;
     }
-
+    .score-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
      
  }
 
