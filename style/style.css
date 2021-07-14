@@ -1,0 +1,163 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* =========================
+    banner section part style 
+    ========================== */
+.banner-section{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.website-banner{
+    width: 70%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-headding{
+
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+
+.banner-headding{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+
+
+}
+.banner-button{
+    background-color: #E02C6D;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+.banner-button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+    padding: 20px 25px;
+
+}
+.banner-img{
+    
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-bottom: 85px;
+    padding-right: 140px;
+}
+
+.banner-img img{
+   width:556px;
+   height: 438px;
+}
+.banner-section:hover .banner-img{
+    transform:scale(1.2);
+    transition: transform 0.5s ease-in;
+}
+.banner-button:hover{
+    background-color: green;
+    color:white;
+}
+
+/* players style  */
+.middle-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.players-section{
+   
+    margin-top: 70px;
+    width: 65%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.player{
+    border: 15px solid white;
+    box-shadow:0px 1px 7px 0px grey;
+}
+.player-img img{
+    width: 100%;
+}
+.player:hover{
+    box-shadow: 0px -1px 14px 7px pink;
+}
+
+/* ========
+foooter style 
+=========== */
+.footer{
+    margin-top: 160px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    width: 485px;
+    height: 110px;
+}
+
+.footer-img img{
+    width: 100%;
+    height: 100%;
+}
+.social-icon i{
+    text-align: center;
+    
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color:#E7E7E8 ;
+    color:#88738B;
+    font-size: 25px;
+    padding-top: 5px;
+    margin: 10px;
+
+}
+.copy-right{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* ==================
+responsive for mobile
+ ===================
+ */
+ @media only screen and (max-width:600px) {
+    .banner-section{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .website-banner{
+        flex-direction:column;
+    
+    }
+    .banner-img img{
+        width: 100%;
+        padding:1rem;
+    }
+     
+ }
