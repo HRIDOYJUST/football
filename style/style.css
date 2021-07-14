@@ -18,13 +18,15 @@ body{
 }
 
 .website-banner{
-    width: 70%;;
+    width: 100%;
+    max-width: 1160px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .website-headding{
-
+    flex:1;
     padding-top: 120px;
     padding-bottom: 170px;
 }
@@ -51,16 +53,16 @@ body{
 
 }
 .banner-img{
-    
+    flex:1;
     padding-top: 70px;
-    padding-left: 100px;
     padding-bottom: 85px;
-    padding-right: 140px;
+
 }
 
+
 .banner-img img{
-   width:556px;
-   height: 438px;
+   width:100%;
+   max-width: 556px;
 }
 .banner-section:hover .banner-img{
     transform:scale(1.2);
@@ -79,9 +81,9 @@ body{
 }
 
 .players-section{
-   
-    margin-top: 70px;
-    width: 65%;
+    width: 100%;
+    max-width: 1050px;
+    margin:70px auto 0;
 }
 .players{
     display: grid;
@@ -141,23 +143,63 @@ foooter style
     font-weight: 400;
 }
 
+/* responsive for tablate  */
+
+@media only screen and (max-width:1000px){
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .website-headding{
+        padding-left:1rem;
+    }
+    
+}
+
+
 
 /* ==================
 responsive for mobile
  ===================
  */
- @media only screen and (max-width:600px) {
+
+ @media only screen and (max-width:767px) {
     .banner-section{
         justify-content: space-between;
         align-items: center;
     }
+
     .website-banner{
         flex-direction:column;
     
     }
+    .website-headding{
+        padding-bottom: 16px;
+    }
     .banner-img img{
-        width: 100%;
+        width: 70%;
         padding:1rem;
     }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    
+    .footer-img{
+        width:80%;
+    }
+    .footer-img img{
+        width: 80%;
+        object-fit: contain;
+    }
+    .banner-headding{
+        font-size:36px;
+        padding-bottom: 0;
+    }
+    .banner-img{
+        padding-top:0;
+    }
+
      
  }
+
+ 
